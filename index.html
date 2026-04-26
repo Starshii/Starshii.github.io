@@ -3,47 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"
+    <title>Starshitek</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
 </head>
 <body >
-    <section class="banner-area starlight"></section>
-    
-    <h1 id="StarshiTitle"><span>S</span><span>t</span><span>a</span><span>r</span><span>s</span><span>h</span><span>i</span></h1>
-    
-    <a id="aboutme" href="Google.com">googlegang</a>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 
-    <p> hiiii Im Starshi, a Game Design Student at HKU, I like making games and stuff</p> <br><br><br>
-    <header class="nav-area">
-        <div class="starlight"> </div>
-    </header>
-    <div class="aboutmeplanet"></div>
-    <h1>yuuhhh</h1>
-    <h1 id="ray"> I LOVE RAYQUAZA</h1>
-    <h1 id="andrea"> yo and shi</h1>
+        <script>
+    // Create multiple stars dynamically
+    function createStars() {
+      const numberOfStars = 100;
+      for (let i = 0; i < numberOfStars; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
 
-    <img src="rayquaza.png"> 
+        // Random size, position, and animation duration for each star
+        const size = Math.random() * 8 + 1;
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.left = `${Math.random() * 100}vw`;
+        star.style.top = `${Math.random() * 100}vh`;
+
+        // Random twinkle speed
+        star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+
+        document.body.appendChild(star);
+      }
+    }
+
+    createStars();
+  </script>
+    
+    <canvas id="canvas3d"> </canvas>
+    <h1 id="StarshiTitle"><span>S</span><span>t</span><span>a</span><span>r</span><span>s</span><span>h</span><span>i</span><span>t</span><span>e</span><span>k</span></h1>
+    
+
 
     
-    <p> I mostly do</p> 
-    <ul> 
-        <li>games</li>
-        <li>video editing</li>
-  
-    </ul>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
 
 
-
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.88/build/spline-viewer.js"></script>
+<spline-viewer class="planets" url="https://prod.spline.design/nARRg0FA3Qf5fWU1/scene.splinecode"></spline-viewer>
 </body>
 <style>
 
 
     .star {
-      position: absolute;
+      position: fixed;
       background: white;
       border-radius: 50%;
       opacity: 0.8;
@@ -68,30 +78,4 @@
       }
     }
 </style>
-<body>
-      <script>
-    // Create multiple stars dynamically
-    function createStars() {
-      const numberOfStars = 100;
-      for (let i = 0; i < numberOfStars; i++) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-
-        // Random size, position, and animation duration for each star
-        const size = Math.random() * 8 + 1;
-        star.style.width = `${size}px`;
-        star.style.height = `${size}px`;
-        star.style.left = `${Math.random() * 100}vw`;
-        star.style.top = `${Math.random() * 100}vh`;
-
-        // Random twinkle speed
-        star.style.animationDuration = `${Math.random() * 2 + 1}s`;
-
-        document.body.appendChild(star);
-      }
-    }
-
-    createStars();
-  </script>
-</body>
 </html> 
