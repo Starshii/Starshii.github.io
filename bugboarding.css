@@ -1,0 +1,35 @@
+body{
+    padding:0;
+    margin:0;
+    background-color: black;
+    
+
+}
+.thumbnaildiv{
+   display: flex;
+   justify-content: center;
+   margin-top: 70px;
+   border-radius: 30px;
+   mask-image: linear-gradient(black, transparent);
+}
+.text1{
+    font-family: "Fredoka", sans-serif;
+    width: 1260px;
+    height: 100vh;
+    color:white;
+    font-size: 30px;
+    position: relative;
+    margin: auto;
+    
+}
+.playbutton{
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    width: 100px;
+    height: 50px;
+}
+.logotext{
+    position: absolute;
+
+}
