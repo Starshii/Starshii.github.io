@@ -2,16 +2,23 @@ body{
     padding:0;
     margin:0;
     background-color: black;
-    
-
 }
 .thumbnaildiv{
-   display: flex;
-   justify-content: center;
-   margin-top: 70px;
-   border-radius: 30px;
-   mask-image: linear-gradient(black, transparent);
-}
+    position: relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 700px;
+    background-image: url('bugboardingthumb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0px solid black;
+    border-radius: 25px;
+    
+    
+} 
+
 .text1{
     font-family: "Fredoka", sans-serif;
     width: 1260px;
@@ -23,13 +30,95 @@ body{
     
 }
 .playbutton{
+    border-color: white;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 30px;
     position: absolute;
-    top: 60vh;
-    left: 50vw;
+    width: 200px;
+    height: 75px;
+    top: 80%;
+    right: 10px;
+        z-index: 2;
+}
+.playbutton:hover{
+    position: absolute;
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+
+}
+.teamsize{
+    position:absolute;
+    width: 70px;
+    height: 70px;
+    top: 55%;
+    left: 1.5%;
+        z-index: 1;
+}
+.time{
+    position:absolute;
+    width: 70px;
+    height: 70px;
+    top: 68%;
+    left: 1.5%;
+         z-index: 1;
+}
+.title{
+    font-family: "Fredoka", sans-serif;
+    color:white;
+    font-size: 80px;
+    position: absolute;
+    top: 67%;
+    left: 1.5%;
+        z-index: 1;;
+    
+}
+.countTime{
+    font-family: "Fredoka", sans-serif;
+    color:white;
+    font-size: 30px;
+    position: absolute;
+    top: 68%;
+    left: 7.5%;
+        z-index: 1;
+    
+}
+
+.back{
+    border-color: white;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 20px;
+    position: fixed;
     width: 100px;
     height: 50px;
+    top: 1%;
+    left: 10px;
+     z-index: 1;
 }
-.logotext{
-    position: absolute;
-
+.back:hover{
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.gradientoverlay{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 700px;
+    border: 0px solid black;
+    background: linear-gradient(transparent, black);
+    pointer-events:none;
+        z-index: 1;
+}
+.trailer{
+    display: flex;
+    justify-content: center;
 }
