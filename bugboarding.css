@@ -3,6 +3,7 @@ body{
     margin:0;
     background-color: black;
 }
+
 .thumbnaildiv{
     position: relative;
     margin-left: auto;
@@ -14,7 +15,6 @@ body{
     background-repeat: no-repeat;
     border: 0px solid black;
 } 
-
 
 .playbutton{
     border-color: white;
@@ -31,6 +31,7 @@ body{
     right: 10px;
         z-index: 2;
 }
+
 .playbutton:hover{
     position: absolute;
     background-color: white;
@@ -38,6 +39,7 @@ body{
     color: rgb(0, 0, 0);
 
 }
+
 .teamsize{
     position:absolute;
     width: 70px;
@@ -46,6 +48,7 @@ body{
     left: 25px;
         z-index: 1;
 }
+
 .time{
     position:absolute;
     width: 70px;
@@ -54,6 +57,7 @@ body{
     left: 25px;
          z-index: 1;
 }
+
 .title{
     font-family: "Fredoka", sans-serif;
     color:white;
@@ -64,6 +68,7 @@ body{
         z-index: 1;;
     
 }
+
 .countTime{
     font-family: "Fredoka", sans-serif;
     color:white;
@@ -88,13 +93,15 @@ body{
     height: 50px;
     top: 1%;
     left: 10px;
-     z-index: 1;
+     z-index: 2;
 }
+
 .back:hover{
     background-color: white;
     border-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
 }
+
 .gradientoverlay{
     position: relative;
     margin: auto;
@@ -109,34 +116,47 @@ body{
 
 
 
+
 .text{
+    display: grid;
+    gap: 3em;
+    grid-auto-columns: 500px;
+    justify-content: center;
+    grid-template-areas:
+    "box-1 box-2"
+    "box-3 box-4";
+
+
     font-family: "Fredoka", sans-serif;
+    color:white;
+    font-size: 30px;
+}
+
+@media(max-width: 80em){
+    .text{
+        justify-content: start;
+        grid-template-areas:
+            "box-1""box-2"
+            "box-3""box-4";
+    }
+}
+
+.Goals{
+    height: 150px;
+    width: 100%;
+    background-color:grey;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 30px;
+    font-family: "Fredoka", sans-serif;
+    align-items: center;
+}
+
+.andrea{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color:white;
-    font-size: 30px;
-    margin: auto;
-    gap: 30px;
-}
-
-.trailer{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.descrih{
-    width: 750px;
-    display: flex;
-    justify-content: flex-start;
-    color:white;
-    font-size: 30px;
-    font-family: "Fredoka", sans-serif;
-}
-
-.info{
-    display: flex;
-    justify-content: flex-start;
     width: 750px;
     color:white;
     font-size: 30px;
@@ -144,6 +164,9 @@ body{
     align-items: center;
 }
 
-.general{
-    
+.andreaslop{
+    flex-basis: 50%;
+    flex-grow:1;
 }
+
+
