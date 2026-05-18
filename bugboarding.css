@@ -1,5 +1,5 @@
 body{
-    padding:0;
+    padding:3px;
     margin:0;
     background-color: black;
 }
@@ -121,6 +121,7 @@ body{
     display: grid;
     gap: 3em;
     grid-auto-columns: 500px;
+    grid-template-rows: 1fr;
     justify-content: center;
     grid-template-areas:
     "box-1 box-2"
