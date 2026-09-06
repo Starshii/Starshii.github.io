@@ -1,14 +1,31 @@
-body{
-    height: 3000px;
-    margin: 0px;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
     padding: 0;
 
-    background-image: linear-gradient(to bottom, black, rgb(9, 7, 14), rgb(7, 30, 161));
+    background-color: rgb(7, 30, 161);
+
+    background-image: linear-gradient(
+        to bottom,
+        black 0%,
+        rgb(9, 7, 14) 40%,
+        rgb(7, 30, 161) 100%
+    );
+
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    justify-content: center;
+
+    overflow-x: hidden;
 }
 .Container{
+    padding: 0px;
+    margin: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -17,6 +34,8 @@ body{
     color: white;
     font-family: "Fredoka", sans-serif;
     font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .GameTitle{
@@ -59,8 +78,9 @@ body{
     position: fixed;
     width: 75px;
     height: 40px;
+
+    top: 1%;
     right: 1%;
-    margin-top: 1%;
     z-index: 1;
 }
 
@@ -96,12 +116,15 @@ body{
     flex-wrap: wrap;
     width: 400px;
     margin-left: 20px;
+    min-width: 0;
+
 }
 
 .GameplayVideoDiv{
     width: 850px;
     max-width: 100%;
     box-sizing: border-box;
+    min-width: 0;
 }
 
 .GameplayShowcaseVideo{
@@ -110,6 +133,7 @@ body{
     
     border: 5px solid rgb(255, 255, 255);
     border-radius: 20px;
+        box-sizing: border-box;
 }
 
 .DescriptionDiv{
@@ -160,6 +184,7 @@ body{
     flex-wrap: nowrap;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .FallingStar{
@@ -185,30 +210,34 @@ body{
     margin-left: 15px;
     margin-right: 15px;
     width: 100%;
-    height: fit-content;
+    height: auto;
+    gap: 5px;
 }
 
 .ChallengeTitleDiv{
     display: flex;
     width: 100%;
-    height: 50px;
+    height: fit-content;  
 }
 
 .ChallengeTitle{
     height: fit-content;  
     margin-top: 0px;
+    margin: 0px;
 }
 
 .ChallengeSubDiv{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 40px;
+    height: fit-content;
 }
 
 .ChallengeSub{
     width: fit-content;
     height: fit-content;
     flex-basis:max-content;
-    margin-top: 0;
+    margin: 0px;
 }
 
 .ParagraphDiv{
@@ -220,8 +249,10 @@ body{
 .Paragraph{
     max-width: 450px;
     width: 100%;
+    min-width:0px;
     height: fit-content;
     margin-top: 0;
+    
 }
 
 .ExampleVideo{
@@ -258,6 +289,7 @@ body{
 
 
 @media(max-width: 1270px) {
+    
     .Container{
         flex-direction: column;
     }
