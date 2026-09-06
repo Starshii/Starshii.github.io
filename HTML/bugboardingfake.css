@@ -1,0 +1,410 @@
+body{
+    height: 5000px;
+    margin: 5px;
+    padding: 0;
+    background-image: linear-gradient(to bottom, black, rgb(9, 7, 14), rgb(7, 30, 161));
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.page{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    
+    width: 1600px;
+    margin: auto;
+    margin-top: 20px;
+        
+    display: grid;
+    gap: 4.5px;
+
+    grid-template-columns: repeat(24, 50px);
+    grid-template-rows: repeat(90, 50px);
+
+    transform-origin: top-left;
+    --scale: min(1, calc(100vw / 1600px));
+
+    transform: scale(var(--scale));
+}
+
+.Title{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-area: 2 / 1 / 3 / 5;
+    align-items: center;
+
+    font-family: "Fredoka", sans-serif;
+    font-style: bold;
+    font-size: 50px;
+    color:white;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.PlayButton{
+    display: grid;
+    border-color: white;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: black;
+    padding-top: 6px;
+    font-size: 30px;
+    width: 120px;
+    height: 60px;
+}
+
+.BackButton{
+    position: fixed;
+    border-color: white;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 30px;
+    width: 100px;
+    height: 50px;
+} 
+
+
+.GameplayShowcaseVideo{
+    grid-area: 3 / 1 / 24 / 20;
+    width: min(1000px, 95vw);
+    aspect-ratio: 16/ 9;
+    height: auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.DescriptionDiv{
+    display: grid;
+    grid-area: 3 / 20 / 8 / 26;
+
+
+    padding: 5px;
+    font-family: "Fredoka", sans-serif;
+    font-style: italic;
+    font-size: 23px;
+    color:white;
+    margin: 0;
+
+    border-left: 2px solid white;
+   
+}
+
+.ClockPNG{
+    display: grid;
+    grid-area: 8 / 20 / 9 / 22;
+    margin-top: 16px;
+}
+
+.TimeDiv{
+    display: grid;
+    grid-area: 8 / 21 / 9 / 26;
+
+    font-family: "Fredoka", sans-serif;
+    font-style: bold;
+    font-size: 23px;
+    color:white;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.People{
+    display: grid;
+    grid-area: 10 / 20 / 11 / 26;
+    margin-top: 10px;
+}
+
+.TeamSizeDiv{
+    display: grid;
+    grid-area: 10 / 21 / 11 / 26;
+
+    font-family: "Fredoka", sans-serif;
+    font-style: bold;
+    font-size: 23px;
+    color:white;
+    margin: 0;   
+    margin-left: 20px;
+    margin-top: -7px;
+}
+
+.ToolsPNG{
+    display: grid;
+    grid-area: 12 / 20 / 13 / 26;
+    margin-top: 4px;
+}
+
+.ToolsDiv{
+    display: grid;
+    grid-area: 12 / 21 / 13 / 26;
+    align-content: center;
+
+    font-family: "Fredoka", sans-serif;
+    font-style: bold;
+    font-size: 23px;
+    color:white;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.GoalsTitle{
+    display: grid;
+    grid-area: 23 / 9 / 8 / 26;
+    align-items: center;
+
+    font-family: "Fredoka", sans-serif;
+    font-style: bold;
+    font-size: 60px;
+    color:white;
+    margin: 0;
+}
+
+.PostMortem{
+    display: grid;
+    grid-area: 56 / 13;
+    align-items: center;
+
+    font-family: "Fredoka", sans-serif;
+    font-style: bold;
+    font-size: 60px;
+    color:white;
+    margin: 0;
+    margin-left: -10px;
+}
+
+.Divider{
+    display: grid;
+    width: 1600px;
+    grid-area: 16 / 1 / 27 / 9;
+}
+
+.Divider2{
+    display: grid;
+    width: 1600px;
+    grid-area: 57 / 1;
+}
+
+.FallingStar{
+    display: grid;
+
+    width: 30px;
+    height: 100%;
+    
+    background: linear-gradient(to bottom, transparent 0%, white 25%, white 100%);
+    border-radius: 20px;
+    
+}
+
+.StarPNG{
+    display: grid;
+
+    width: 70px;
+    margin-left: -19px;
+    transform: rotate(45deg);
+   }
+
+.HeaderTitle{
+    display: grid;
+
+    font-family: "Fredoka", sans-serif;
+    font-style: bold;
+    font-size: 35px;
+    color:white;
+    margin: 0;
+}
+
+.SubHeader{
+    display: grid;
+    
+    font-family: "Fredoka", sans-serif;
+    font-size: 26px;
+    color: white;
+    margin-top: 10px;
+}
+
+.TextBox{
+    display: grid;
+
+    font-family: "Fredoka", sans-serif;
+    font-size: 23px;
+    color: white;
+    margin: 0;
+    margin-bottom: -13px;
+    border-bottom: 2px solid white;
+}
+
+.ExampleVideoDiv{
+    display: grid;
+
+    padding: 10px;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+    border-radius: 50px;
+}
+
+.SubText{
+    padding-top: 8px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+.ExampleVideo{
+    display: grid;
+
+    border-radius: 30px;
+}
+
+.FallingStar1{
+    grid-area: 19 / 1 / 24 / 28;
+}
+
+.Star1{
+    grid-area: 23 / 1;
+}
+
+.Challenge1{
+    display: grid;
+    grid-area: 19 / 2 / 33 / 8;
+}
+
+.Challenge1Sub{
+    grid-area: 20 / 2 / 21 / 8;
+}
+
+.Challenge1-1Box{
+    grid-area: 21 / 2 / 23 / 14;
+}
+
+.FallingStar2{
+    grid-area: 24 / 28 / 40 / 28;
+}
+
+.Star2{
+    grid-area: 39 / 28;
+}
+
+.Solution1{
+    grid-area: 24 / 22;
+}
+
+.Solution1Sub{
+    
+    grid-area: 25 / 22 / 27 / 27;
+}
+
+.Solution1-1Box{
+    grid-area: 26 / 22 / 28 / 26;
+
+    margin-right: 10px;
+}
+
+.VideoDiv1{
+    width: 400px;
+    height: 450px;
+    
+    grid-area: 30 / 1; 
+}
+
+.VideoDiv2{
+    width: 400px;
+    height: 450px;
+    
+    grid-area: 30 / 11;
+}
+
+.VideoDiv3{
+    width: 400px;
+    height: 450px;
+    
+    grid-area: 30 / 21;
+}
+
+.FallingStar3{
+    grid-area: 41 / 1 / 46 / 2;
+}
+
+.Star3{
+    grid-area: 45 / 1;
+}
+
+.Challenge2{
+    grid-area: 41 / 2 / 41 / 17;
+}
+
+.Challenge2Sub{
+    grid-area: 42 / 2 / 42 / 17;
+}
+
+.Challenge2-1Box{
+    grid-area: 43 / 2 / 45 / 13;
+}
+
+.FallingStar4{
+    grid-area: 47 / 28 / 53 / 28;
+}
+
+.Star4{
+    grid-area: 52 / 28;
+}
+
+.Solution2{
+    grid-area: 47 / 25;
+    text-align: right;
+}
+
+.Solution2Sub{
+    text-align: right;
+    grid-area: 48 / 24 / 48 / 26;
+}
+
+.Solution2-1Box{
+    grid-area: 49 / 20 / 52 / 26;
+    text-align: right;
+    
+}
+
+.FallingStar5{
+    grid-area: 60 / 1 / 66;
+}
+
+.Star5{
+    grid-area: 65 / 1;
+}
+
+.WhatWentWell{
+    grid-area: 60 / 2 / 60 / 12;
+}
+
+.WhatWentWellBox{
+    margin-top: 9px;
+    grid-area: 61 / 2 / 64 / 9;
+}
+
+.FallingStar6{
+    grid-area: 60 / 28 / 71;
+}
+
+.Star6{
+    grid-area: 70 / 28;
+}
+
+.WhatBetter{
+    grid-area: 60 / 23;
+}
+
+.WhatBetterBox{
+    grid-area: 63 / 23 / 69 / 26; 
+}
+
+
+
