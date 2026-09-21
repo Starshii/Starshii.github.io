@@ -1,23 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-    <title>Starshitek.aboutme</title>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+  <link href="aboutmestyle.css" rel="stylesheet">
 </head>
-<body>
-  
 
-    <h1>page under construction</h1> 
-    <a href="https://starshii.github.io/index.html">
-    <button>go back</button>
+<body>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <a href="https://starshii.github.io/gameportfolio.html">
+      <button class="BackButton">Back</button>
     </a>
 
+    <div class="Container">
+
+      <div class="Divider">
+        <h1>ABOUT ME</h1>
+        <img class="DividerPNG" src="linedivider.png">
+      </div>
+
+
+            <div class="ChallengeBox">
+
+            <div class="FallingStar"></div>
+
+            <div class="ChallengeBoxDiv">
+
+              <div class="ChallengeTitleDiv">
+                <h1 class="ChallengeTitle">Hi, I'm Stars Kruijsen, a game designer!</h1>
+              </div>
+
+              <div class="ParagraphDiv">
+                <p class="Paragraph">
+                    I'm a passionate game designer with a love for rhythm games, platformers, and strategy games! Here's my resume!</p>
+              </div>
+
+                          <div class="ExampleVideoDiv"> 
+                <img class="ExampleVideo" src="resume.png" width="800px">
+            </div>
+
+            </div>
+
+          </div>
+          <img class="StarPNG" src="starpng.png">
+
+
+
+      <script>
+    // Create multiple stars dynamically
+    function createStars() {
+      const numberOfStars = 100;
+      for (let i = 0; i < numberOfStars; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+
+        // Random size, position, and animation duration for each star
+        const size = Math.random() * 8 + 1;
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.left = `${Math.random() * 100}vw`;
+        star.style.top = `${Math.random() * 100}vh`;
+
+        // Random twinkle speed
+        star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+
+        document.body.appendChild(star);
+      }
+    }
+
+    createStars();
+  </script>
+    </div>
+
 </body>
-</html>
+
+<style>
+
+
+    .star {
+      position: fixed;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% {
+        opacity: 0.8;
+      }
+      50% {
+        opacity: 0.3;
+      }
+    }
+
+    @keyframes moveStars {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(100vh);
+      }
+    }
+</style>
