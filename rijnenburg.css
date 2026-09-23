@@ -141,7 +141,7 @@ body {
     display: flex; 
     flex-direction: row; 
     flex-wrap: nowrap; 
-    width: 400px;
+    width: 90%;
     font-size: 20px;
     align-items: center;
 }
